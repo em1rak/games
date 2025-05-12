@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Камень, Ножницы, Бумага</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score-board"><span id="player-score">0</span> : <span id="computer-score">0</span></div>
+        
+        <div class="hands-container">
+            <div class="hand player-hand">
+                <img src="images/default.png" alt="Игрок" id="player-choice">
+                <div class="hand-label">Вы</div>
+            </div>
+            
+            <div class="vs">VS</div>
+            
+            <div class="hand computer-hand">
+                <img src="images/default.png" alt="Компьютер" id="computer-choice">
+                <div class="hand-label">Компьютер</div>
+            </div>
+        </div>
+        
+        <div class="choices">
+            <button class="choice" data-choice="rock">Камень</button>
+            <button class="choice" data-choice="paper">Бумага</button>
+            <button class="choice" data-choice="scissors">Ножницы</button>
+        </div>
+        
+        <div id="result" class="result">Сделайте свой выбор!</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
